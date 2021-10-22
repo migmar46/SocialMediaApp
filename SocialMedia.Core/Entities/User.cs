@@ -9,6 +9,7 @@ namespace SocialMedia.Core.Entities
         {
             Comments = new HashSet<Comment>();
             Posts = new HashSet<Post>();
+            Estudens = new HashSet<Estuden>();
         }
 
         public string FirstName { get; set; }
@@ -20,5 +21,8 @@ namespace SocialMedia.Core.Entities
 
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Estuden> Estudens { get; set; }
+
+
     }
 }

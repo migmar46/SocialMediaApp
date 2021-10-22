@@ -12,5 +12,7 @@ namespace SocialMedia.Core.Entities
 
         public virtual Post Post { get; set; }
         public virtual User User { get; set; }
+        public virtual Estuden Estuden { get; set; }
+
     }
 }

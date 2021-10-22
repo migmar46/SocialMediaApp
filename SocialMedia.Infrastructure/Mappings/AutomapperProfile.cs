@@ -10,6 +10,9 @@ namespace SocialMedia.Infrastructure.Mappings
         {
             CreateMap<Post, PostDto>();
             CreateMap<PostDto, Post>();
+            CreateMap<Estuden, EstudenDto>();
+            CreateMap<EstudenDto, Estuden>();
+
 
             CreateMap<Security, SecurityDto>().ReverseMap();
         }

@@ -15,11 +15,11 @@ namespace SocialMedia.Infrastructure.Data
         {
         }
 
+        public virtual DbSet<Estuden> Estudens { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Security> Securities { get; set; }
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

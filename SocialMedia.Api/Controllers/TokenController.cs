@@ -43,6 +43,7 @@ namespace SocialMedia.Api.Controllers
 
         private async Task<(bool, Security)> IsValidUser(UserLogin login)
         {
+
             var user = await _securityService.GetLoginByCredentials(login);
             var isValid = _passwordService.Check(user.Password, login.Password);
             return (isValid, user);

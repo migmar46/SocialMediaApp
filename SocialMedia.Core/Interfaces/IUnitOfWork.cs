@@ -10,6 +10,8 @@ namespace SocialMedia.Core.Interfaces
 
         IRepository<User> UserRepository { get; }
 
+        IRepository<Estuden> EstudenRepository { get; }
+
         IRepository<Comment> CommentRepository { get; }
 
         ISecurityRepository SecurityRepository { get; }
